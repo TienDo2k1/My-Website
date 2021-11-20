@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Information.css">
-    <link rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="2392376.jpg">
+
     <title>Tech Registration</title>
 </head>
 
@@ -55,7 +56,7 @@
                 <input type="text" placeholder="Phone Number">
             </div>
         </div>
-        <div class="registration-form-2">
+        <div class="registration-form-1">
             <h4>Delivery Address</h4>
             <div class="input-box">
                 <span class="details">First Name:</span>
@@ -88,9 +89,19 @@
         </div>
         <div class="registration-form">
             <h4>Email Address</h4>
+            <p>We require an Email Address, so that we can communicate with you about your order.</p>
+            <div class="input-box">
+                <span class="details">Email Address:</span>
+                <input type="text" class="email" placeholder="Email Address" id="emailId">
+            </div>
+            <div class="input-box">
+                <span class="details">Retype email Address:*</span>
+                <input type="text" class="email" placeholder="Retype email Address" id="emailId">
+            </div>
         </div>
         <div class="registration-form">
             <h4>Save time next time - Register now</h4>
+            <p>Create a staples.com username and we'll save your information to make future order easier. Fill out all the field below</p>
             <div class="input-box">
                 <span class="details">Staples Number:</span>
                 <input type="text" class="number" placeholder="Number">
@@ -107,14 +118,37 @@
                 <span class="details">Answer to your question:</span>
                 <input type="text" class="text" placeholder="Answer to your question">
             </div>
+            <div class="input-box">
+                <input type="checkbox">
+                <span><b>Remember me</b> (You will not be asked to login for future visit)</span>
+            </div>
         </div>
         <div class="registration-form">
             <h4>Optional Information</h4>
+            <div class="input-box"></div>
             <span class="details">Staples Number:</span>
             <input type="text" class="number">
+            <div class="input-box">
+                <span class="details">This Address is a:</span>
+                <select>
+                    <option>Please select...</option>
+                    <option></option>
+                </select>
+            </div>
+            <div class="input-box">
+                <span class="details">Number of employees</span>:
+                <select>
+                    <option>Please select...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <input type="submit" onClick="check()" value="Continue">
         </div>
     </form>
-
+    <script src="js/Information.js"></script>
 </body>
 
 </html>
