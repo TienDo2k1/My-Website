@@ -1,1 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+.container {
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    border: 1px solid #000;
+}
+
+.registration-form {
+    margin-bottom: 15px;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: rgb(47, 255, 47);
+}
+
+h4 {
+    background: rgba(0, 0, 255, 0.808);
+    color: white;
+}
+
+form {
+    min-width: 800px;
+    min-height: 200px;
+    flex-direction: column;
+    align-self: center;
+    padding: 20px 20px;
+    box-shadow: 0 5px 8px 0 rgba(51, 62, 73, 0.9);
+}
+
+form .registration-form .input-box {
+    margin: 10px 0 6px 0;
+    width: calc(100% / 2 - 10px);
+}
+
+.registration-form-1 {
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
