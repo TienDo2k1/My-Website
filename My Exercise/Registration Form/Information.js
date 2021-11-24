@@ -40,6 +40,7 @@ function submitForm() {
         alert("Please enter your address");
         return false;
     }
+    alert("Thank you for submit in Form!");
 }
 
 function reset() {
