@@ -27,6 +27,17 @@ a:hover {
 h4 {
     background: rgba(0, 0, 255, 0.808);
     color: white;
+    margin: 1px 1px 1px 1px;
+}
+
+p,
+span {
+    margin-left: 9px;
+}
+
+input {
+    margin-left: 10px;
+    flex: 1;
 }
 
 form {
@@ -44,8 +55,8 @@ form .registration-form .input-box {
 }
 
 form .registration-form-1 .input-box {
-    margin: 10px 0 6px 0;
-    width: calc(100% / 2 - 10px);
+    margin: 10px 0 10px 0;
+    width: 74vh;
 }
 
 .registration-form-1 {
