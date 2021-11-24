@@ -43,8 +43,13 @@ form .registration-form .input-box {
     width: calc(100% / 2 - 10px);
 }
 
+form .registration-form-1 .input-box {
+    margin: 10px 0 6px 0;
+    width: calc(100% / 2 - 10px);
+}
+
 .registration-form-1 {
     display: flex;
-    width: auto;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
