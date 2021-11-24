@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Information.css">
     <link rel="icon" type="image/png" href="2392376.jpg">
-
+    <script src="Information.js" defer></script>
     <title>Tech Registration</title>
 </head>
 
 <body>
     <div class="container">
-        <form action="#">
+        <form action="#" method="post" name="f" id="myForm">
             <h2>* Indicate required information</h2>
             <div class="registration-form">
                 <h4>Where would you like your order delivered?</h4>
@@ -26,66 +26,68 @@
                 <p>Participating stores cannot accept deliveries of select oversize furniture items.</p>
             </div>
             <div class="registration-form-1">
-                <h4>Billing Address</h4>
-                <p>Billing address must match credit card.</p>
-                <div class="input-box">
-                    <span class="details">First Name:</span>
-                    <input type="text" placeholder="First name">
+                <div class="form-wrapper-1">
+                    <h4>Billing Address</h4>
+                    <p>Billing address must match credit card.</p>
+                    <div class="input-box">
+                        <span class="details">First Name:</span>
+                        <input type="text" placeholder="First name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name:</span>
+                        <input type="text" placeholder="Last name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email Address:</span>
+                        <input type="text" class="email" placeholder="Email Address" id="emailId">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address:</span>
+                        <input type="text" placeholder="Address">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">City:</span>
+                        <input type="text" placeholder="City">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Nationality:</span>
+                        <input type="text" placeholder="Nationality">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number:</span>
+                        <input type="text" placeholder="Phone Number">
+                    </div>
                 </div>
-                <div class="input-box">
-                    <span class="details">Last Name:</span>
-                    <input type="text" placeholder="Last name">
-                </div>
-                <div class="input-box">
-                    <span class="details">Email Address:</span>
-                    <input type="text" class="email" placeholder="Email Address" id="emailId">
-                </div>
-                <div class="input-box">
-                    <span class="details">Address:</span>
-                    <input type="text" placeholder="Address">
-                </div>
-                <div class="input-box">
-                    <span class="details">City:</span>
-                    <input type="text" placeholder="City">
-                </div>
-                <div class="input-box">
-                    <span class="details">Nationality:</span>
-                    <input type="text" placeholder="Nationality">
-                </div>
-                <div class="input-box">
-                    <span class="details">Phone Number:</span>
-                    <input type="text" placeholder="Phone Number">
-                </div>
-            </div>
-            <div class="registration-form-1">
-                <h4>Delivery Address</h4>
-                <div class="input-box">
-                    <span class="details">First Name:</span>
-                    <input type="text" placeholder="First name">
-                </div>
-                <div class="input-box">
-                    <span class="details">Last Name:</span>
-                    <input type="text" placeholder="Last name">
-                </div>
-                <div class="input-box">
-                    <span class="details">Email Address:</span>
-                    <input type="text" class="email" placeholder="Email Address" id="emailId">
-                </div>
-                <div class="input-box">
-                    <span class="details">Address:</span>
-                    <input type="text" placeholder="Address">
-                </div>
-                <div class="input-box">
-                    <span class="details">City:</span>
-                    <input type="text" placeholder="City">
-                </div>
-                <div class="input-box">
-                    <span class="details">Nationality:</span>
-                    <input type="text" placeholder="Nationality">
-                </div>
-                <div class="input-box">
-                    <span class="details">Phone Number:</span>
-                    <input type="text" placeholder="Phone Number">
+                <div class="form-wrapper-2">
+                    <h4>Delivery Address</h4>
+                    <div class="input-box">
+                        <span class="details">First Name:</span>
+                        <input type="text" placeholder="First name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name:</span>
+                        <input type="text" placeholder="Last name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email Address:</span>
+                        <input type="text" class="email" placeholder="Email Address" id="emailId">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address:</span>
+                        <input type="text" placeholder="Address">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">City:</span>
+                        <input type="text" placeholder="City">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Nationality:</span>
+                        <input type="text" placeholder="Nationality">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number:</span>
+                        <input type="text" placeholder="Phone Number">
+                    </div>
                 </div>
             </div>
             <div class="registration-form">
@@ -109,11 +111,11 @@
                 </div>
                 <div class="input-box">
                     <span class="details">Password:</span>
-                    <input type="password" class="password" placeholder="Password" id="password">
+                    <input type="password" class="password" placeholder="Password" id="password1">
                 </div>
                 <div class="input-box">
                     <span class="details">Retype password:</span>
-                    <input type="password" class="password" placeholder="Retype password" id="password">
+                    <input type="password" class="password" placeholder="Retype password" id="password2">
                 </div>
                 <div class="input-box">
                     <span class="details">Answer to your question:</span>
@@ -128,14 +130,18 @@
                 <h4>Optional Information</h4>
                 <div class="input-box">
                     <span class="details">Staples Number:</span>
-                    <input type="text" class="number" placeholder="Staples Number">
+                    <input type="text" class="number" placeholder="Staples Number" id="mobile">
                     <span>Enter the staples reward number, customers number or tax expect number you would like to apply to this order.</span>
                 </div>
                 <div class="input-box">
                     <span class="details">This Address is a:</span>
                     <select>
                         <option>Please select...</option>
-                        <option></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>>=4</option>
                     </select>
                 </div>
                 <div class="input-box">
@@ -146,16 +152,17 @@
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
-                        <option>>=4<option>
+                        <option>>=4</option>
                     </select>
                 </div>
-                <input type="submit" onClick="check()" value="Continue">
 
             </div>
+            <button class="submit" onclick="return submitForm()">Submit</button>
+            <button class="reset" onclick="return reset()">Reset</button>
         </form>
     </div>
 
-    <script src="Information.js"></script>
+
 </body>
 
 </html>
