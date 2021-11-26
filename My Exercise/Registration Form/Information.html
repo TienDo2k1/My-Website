@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Information.css">
+    <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="icon" type="image/png" href="2392376.jpg">
     <script src="Information.js" defer></script>
     <title>Tech Registration</title>
@@ -14,125 +15,196 @@
 <body>
     <div class="container">
         <form action="#" method="post" name="f" id="myForm">
-            <h2>* Indicate required information</h2>
+            <h2><span style="color:red">*</span> <span style="color:gray">Indicate required information</span></h2>
             <div class="registration-form">
-                <h4>
+                <h3>
                     <p>Where would you like your order delivered?</p>
-                </h4>
+                </h3>
                 <input type="radio" name="select">
-                <span class="details"> Deliver to my address </span>
+                <label class="details"> Deliver to my address </label>
                 <br><input type="radio" name="select">
-                <span class="details">Deliver to a store near me</span>
+                <label class="details">Deliver to a store near me</label>
                 <a href="#">(Learn more)</a>
                 <br>
                 <p>Participating stores cannot accept deliveries of select oversize furniture items.</p>
             </div>
             <div class="registration-form-1">
                 <div class="form-wrapper-1">
-                    <h4>
+                    <h3>
                         <p>Billing Address</p>
-                    </h4>
-                    <span>Billing address must match credit card.</span>
+                    </h3>
+                    <p>Billing address must match credit card.</p>
                     <div class="input-box">
-                        <span class="details">First Name:</span>
-                        <input type="text" placeholder="First name">
+                        <label class="details">First Name:<span style="color:red">*</span></label>
+                        <input type="text" placeholder="First name" id="nameID">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                     <div class="input-box">
-                        <span class="details">Last Name:</span>
-                        <input type="text" placeholder="Last name">
+                        <label class="details">Last Name:<span style="color:red">*</span></label>
+                        <input type="text" placeholder="Last name" id="nameID">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                     <div class="input-box">
-                        <span class="details">Email Address:</span>
+                        <label class="details">Email Address:</label>
                         <input type="text" class="email" placeholder="Email Address" id="emailId">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                     <div class="input-box">
-                        <span class="details">Address:</span>
+                        <label class="details">Address:</label>
                         <input type="text" placeholder="Address">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                     <div class="input-box">
-                        <span class="details">City:</span>
+                        <label class="details">City:</label>
                         <input type="text" placeholder="City">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                     <div class="input-box">
-                        <span class="details">Nationality:</span>
+                        <label class="details">Nationality:</label>
                         <input type="text" placeholder="Nationality">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                     <div class="input-box">
-                        <span class="details">Phone Number:</span>
+                        <label class="details">ZIP Code:</label>
+                        <input type="text" placeholder="ZIP Code">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
+                    </div>
+                    <div class="input-box">
+                        <label class="details">Phone Number:<span style="color:red">*</span></label>
                         <input type="text" placeholder="Phone Number">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                 </div>
                 <div class="form-wrapper-2">
-                    <h4>
+                    <h3>
                         <p>Delivery Address</p>
-                    </h4>
+                    </h3>
                     <div class="input-box">
                         <input type="checkbox">
                         <span>Use Billing Address</span>
                     </div>
                     <div class="input-box">
-                        <span class="details">First Name:</span>
-                        <input type="text" placeholder="First name">
+                        <label class="details">First Name:<span style="color:red">*</span></label>
+                        <input type="text" placeholder="First name" id="nameID">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                     <div class="input-box">
-                        <span class="details">Last Name:</span>
-                        <input type="text" placeholder="Last name">
+                        <label class="details">Last Name:<span style="color:red">*</span></label>
+                        <input type="text" placeholder="Last name" id="nameID">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                     <div class="input-box">
-                        <span class="details">Email Address:</span>
+                        <label class="details">Email Address:</label>
                         <input type="text" class="email" placeholder="Email Address" id="emailId">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                     <div class="input-box">
-                        <span class="details">Address:</span>
+                        <label class="details">Address:</label>
                         <input type="text" placeholder="Address">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                     <div class="input-box">
-                        <span class="details">City:</span>
+                        <label class="details">City:<span style="color:red">*</span></label>
                         <input type="text" placeholder="City">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                     <div class="input-box">
-                        <span class="details">Nationality:</span>
+                        <label class="details">Nationality:</label>
                         <input type="text" placeholder="Nationality">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                     <div class="input-box">
-                        <span class="details">Phone Number:</span>
+                        <label class="details">ZIP Code:</label>
+                        <input type="text" placeholder="ZIP Code">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
+                    </div>
+                    <div class="input-box">
+                        <label class="details">Phone Number:<span style="color:red">*</span></label>
                         <input type="text" placeholder="Phone Number">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error your input!</small>
                     </div>
                 </div>
             </div>
             <div class="registration-form">
-                <h4>
+                <h3>
                     <p>Email Address</p>
-                </h4>
-                <span>We require an Email Address, so that we can communicate with you about your order.</span>
+                </h3>
+                <label>We require an Email Address, so that we can communicate with you about your order.</label>
                 <div class="input-box">
-                    <span class="details">Email Address:</span>
+                    <label class="details">Email Address:</label>
                     <input type="text" class="email" placeholder="Email Address" id="emailId">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error your input!</small>
                 </div>
                 <div class="input-box">
-                    <span class="details">Retype email Address:*</span>
+                    <label class="details">Retype email Address:<span style="color:red">*</span></label>
                     <input type="text" class="email" placeholder="Retype email Address" id="emailId">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error your input!</small>
                 </div>
             </div>
             <div class="registration-form">
-                <h4>
+                <h3>
                     <p>Save time next time - Register now</p>
-                </h4>
-                <span>Create a staples.com username and we'll save your information to make future order easier. Fill out all the field below</span>
+                </h3>
+                <label>Create a staples.com username and we'll save your information to make future order easier. Fill out all the field below</label>
                 <div class="input-box">
-                    <span class="details">Staples Number:</span>
+                    <label class="details">Staples Number:</label>
                     <input type="text" class="number" placeholder="Number">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error your input!</small>
                 </div>
                 <div class="input-box">
-                    <span class="details">Password:</span>
+                    <label class="details">Password:</label>
                     <input type="password" class="password" placeholder="Password" id="password1">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error your input!</small>
                 </div>
                 <div class="input-box">
-                    <span class="details">Retype password:</span>
+                    <label class="details">Retype password:</label>
                     <input type="password" class="password" placeholder="Retype password" id="password2">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error your input!</small>
                 </div>
                 <div class="input-box">
-                    <span class="details">Answer to your question:</span>
+                    <label class="details">Answer to your question:</label>
                     <input type="text" class="text" placeholder="Answer to your question">
                 </div>
                 <div class="input-box">
@@ -140,14 +212,15 @@
                     <span><b>Remember me</b> (You will not be asked to login for future visit)</span>
                 </div>
             </div>
-            <div class="registration-form">
-                <h4>
+            <div class="registration-form-2">
+                <h3>
                     <p>Optional Information</p>
-                </h4>
+                </h3>
                 <div class="input-box">
                     <span class="details">Staples Number:</span>
                     <input type="text" class="number" placeholder="Staples Number" id="mobile">
                     <span>Enter the staples reward number, customers number or tax expect number you would like to apply to this order.</span>
+
                 </div>
                 <div class="input-box">
                     <span class="details">This Address is a:</span>
