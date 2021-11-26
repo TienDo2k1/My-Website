@@ -24,15 +24,15 @@ a:hover {
     color: rgb(47, 255, 47);
 }
 
-h4 {
+h3 {
     background: rgba(0, 0, 255, 0.808);
     color: white;
     margin: 1px 1px 1px 1px;
 }
 
 p,
-span {
-    margin-left: 9px;
+label {
+    margin-left: 8px;
 }
 
 input {
@@ -55,12 +55,16 @@ form .registration-form .input-box {
 }
 
 form .registration-form-1 .input-box {
-    margin: 10px 0 10px 0;
-    width: 74vh;
+    margin: 10px 0 6px 0;
+    width: 75vh;
 }
 
-.registration-form-1 {
+form .registration-form-1 {
+    margin-bottom: 10px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+form .registration-form-2 .input-box {
+    margin: 10px 0 6px 0;
+    width: calc(100% / 2 - 10px);
 }
